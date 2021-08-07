@@ -26,9 +26,25 @@ const routes = [
     }
   },
   {
-    path: '/my-account',
+    path: '/dashboard/my-account',
     name: 'MyAccount',
     component: () => import('../views/dashboard/MyAccount.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
+  {
+    path: '/dashboard/leads',
+    name: 'Leads',
+    component: () => import('../views/dashboard/Leads.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
+  {
+    path: '/dashboard/leads/add',
+    name: 'AddLead',
+    component: () => import('../views/dashboard/AddLead.vue'),
     meta: {
       requireLogin: true
     }
