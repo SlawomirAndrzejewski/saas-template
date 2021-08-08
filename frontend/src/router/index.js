@@ -49,6 +49,22 @@ const routes = [
       requireLogin: true
     }
   },
+  {
+    path: '/dashboard/leads/:id',
+    name: 'Lead',
+    component: () => import('../views/dashboard/Lead.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
+  {
+    path: '/dashboard/leads/:id/edit',
+    name: 'EditLead',
+    component: () => import('../views/dashboard/EditLead.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
 ]
 
 const router = createRouter({
