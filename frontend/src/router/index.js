@@ -34,6 +34,14 @@ const routes = [
     }
   },
   {
+    path: '/dashboard/add-team',
+    name: 'AddTeam',
+    component: () => import('../views/dashboard/AddTeam.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
+  {
     path: '/dashboard/leads',
     name: 'Leads',
     component: () => import('../views/dashboard/Leads.vue'),
