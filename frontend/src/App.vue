@@ -9,7 +9,9 @@
       <div class="lds-dual-ring"></div>
     </div>
 
-    <router-view />
+    <section class="section">
+      <router-view />
+    </section>
   </div>
 </template>
 

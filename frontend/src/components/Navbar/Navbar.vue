@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar is-dark">
     <div class="navbar-brand">
-      <router-link to="/" class="navbar-item">
+      <router-link to="/dashboard" class="navbar-item">
         <strong>SaaS TEMPLATE</strong>
       </router-link>
     </div>
@@ -11,6 +11,7 @@
         <router-link to="/dashboard/leads" class="navbar-item"
           >Leads</router-link
         >
+        <router-link to="/dashboard/team" class="navbar-item">Team</router-link>
 
         <div class="navbar-item">
           <div class="buttons">
