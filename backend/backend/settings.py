@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'djoser',
     'lead',
     'team',
+    'client'
 ]
 
 MIDDLEWARE = [

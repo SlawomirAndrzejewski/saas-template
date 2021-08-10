@@ -94,7 +94,9 @@
               <div class="select">
                 <select v-model="lead.assigned_to">
                   <option :value="lead.assigned_to" selected>
-                    {{ lead.assigned_to }}
+                    <template v-if="lead.assigned_to">
+                      {{ lead.assigned_to.username }}
+                    </template>
                   </option>
                   <option
                     v-for="member in team.members"

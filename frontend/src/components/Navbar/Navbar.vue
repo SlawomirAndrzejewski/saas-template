@@ -12,6 +12,9 @@
           >Leads</router-link
         >
         <router-link to="/dashboard/team" class="navbar-item">Team</router-link>
+        <router-link to="/dashboard/clients" class="navbar-item"
+          >Clients</router-link
+        >
 
         <div class="navbar-item">
           <div class="buttons">

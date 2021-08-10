@@ -89,6 +89,38 @@ const routes = [
       requireLogin: true
     }
   },
+  {
+    path: '/dashboard/clients',
+    name: 'Clients',
+    component: () => import('../views/dashboard/Clients.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
+  {
+    path: '/dashboard/clients/add',
+    name: 'AddClient',
+    component: () => import('../views/dashboard/AddClient.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
+  {
+    path: '/dashboard/clients/:id',
+    name: 'Client',
+    component: () => import('../views/dashboard/Client.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
+  {
+    path: '/dashboard/clients/:id/edit',
+    name: 'EditClient',
+    component: () => import('../views/dashboard/EditClient.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
 ]
 
 const router = createRouter({
