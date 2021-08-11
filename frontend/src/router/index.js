@@ -58,6 +58,14 @@ const routes = [
     }
   },
   {
+    path: '/dashboard/team/edit-member',
+    name: 'EditMember',
+    component: () => import('../views/dashboard/EditMember.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
+  {
     path: '/dashboard/leads',
     name: 'Leads',
     component: () => import('../views/dashboard/Leads.vue'),
@@ -117,6 +125,22 @@ const routes = [
     path: '/dashboard/clients/:id/edit',
     name: 'EditClient',
     component: () => import('../views/dashboard/EditClient.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
+  {
+    path: '/dashboard/clients/:id/add-note',
+    name: 'AddNote',
+    component: () => import('../views/dashboard/AddNote.vue'),
+    meta: {
+      requireLogin: true
+    }
+  },
+  {
+    path: '/dashboard/clients/:id/edit-note/:note_id',
+    name: 'EditNote',
+    component: () => import('../views/dashboard/EditNote.vue'),
     meta: {
       requireLogin: true
     }
