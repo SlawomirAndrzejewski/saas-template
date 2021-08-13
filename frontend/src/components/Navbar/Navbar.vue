@@ -15,6 +15,9 @@
         <router-link to="/dashboard/clients" class="navbar-item"
           >Clients</router-link
         >
+        <router-link to="/dashboard/team/plans" class="navbar-item"
+          >Plans</router-link
+        >
 
         <div class="navbar-item">
           <div class="buttons">
